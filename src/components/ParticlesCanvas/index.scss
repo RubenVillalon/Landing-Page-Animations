@@ -1,0 +1,24 @@
+.particles-main-container {
+  border: solid white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  canvas {
+    background: none;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+  }
+
+  h1 {
+    position: absolute;
+    z-index: 2;
+    top: auto;
+    left: auto;
+  }
+}
