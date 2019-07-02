@@ -8,7 +8,7 @@ const ParticlesCanvas = () => {
   const particlesConfig = {
     particles: {
       number: {
-        value: 120
+        value: 130
       },
       shape: {
         type: "circle"

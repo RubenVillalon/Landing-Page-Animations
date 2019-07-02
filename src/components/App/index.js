@@ -10,7 +10,6 @@ const App = () => {
   return (
     <div className='app-main-container'>
       <Navigation />
-      <TypeEffect text={"Let's do something cool"}/>
       <ParticlesCanvas/>
     </div>
   );

@@ -23,8 +23,7 @@ const Navigation = () => {
   })
 
   const InitialNavBar = useSpring({
-    from: { opacity: 0, marginTop: -20, background: "orange"},
-    opacity: 1, marginTop: 40, background: "red",
+    to: { opacity: 1 },
     config: { duration: 3000 }
   });
   const number = useSpring({ number: 1000, from: { number: 0 } });
