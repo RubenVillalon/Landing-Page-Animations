@@ -24,7 +24,8 @@ const Navigation = () => {
 
   const InitialNavBar = useSpring({
     to: { opacity: 1 },
-    config: { duration: 3000 }
+    config: { duration: 3000 },
+    delay : { duration: 2000 }
   });
   const number = useSpring({ number: 1000, from: { number: 0 } });
   

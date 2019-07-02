@@ -4,7 +4,7 @@
   width: 24em;
   height: 70px;
   margin: 0 auto;
-  border-right: 4px solid rgba(255, 255, 255, 0.75);
+  border-right: 5px solid rgba(255, 255, 255, 0.75);
   font-size: 180%;
   text-align: center;
   white-space: nowrap;
@@ -15,7 +15,7 @@
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 2s 1 normal both,
+  animation: typewriter 5s steps(44) 2s 1 normal both,
     blinkTextCursor 800ms steps(40) infinite normal;
 }
 @keyframes typewriter {
@@ -23,7 +23,7 @@
     width: 0;
   }
   to {
-    width: 20em;
+    width: 17em;
   }
 }
 @keyframes blinkTextCursor {

@@ -23,7 +23,7 @@ const ParticlesCanvas = () => {
       move: {
         enable: true,
         speed: 3,
-        direction: "bottom",
+        direction: "top",
         straight: false
       }
     },
@@ -43,8 +43,8 @@ const ParticlesCanvas = () => {
   };
 
   const CanvasAnimation = useSpring({
-    from : { opacity: 0, background: "rgb(83, 71, 71)"},
-    to: { opacity: 1, background: "black" },
+    from : { opacity: 0 },
+    to: { opacity: 1, background: "grey" },
     config: { duration: 10000 }
 
   })
