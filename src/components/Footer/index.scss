@@ -1,0 +1,24 @@
+.footer-container {
+  background: #0f0e3a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  color: white;
+  .left {
+
+  }
+  .center {
+
+  }
+  .right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 27%;
+    .icon {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
