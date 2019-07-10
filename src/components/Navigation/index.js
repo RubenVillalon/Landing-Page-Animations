@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import "./index.scss";
-import { useSpring, animated, config } from "react-spring";
+import { useSpring, animated } from "react-spring";
 
 
 const Navigation = () => {
@@ -16,17 +16,18 @@ const Navigation = () => {
     borderBottom: '10px solid #2D3747',
     shape: 'M20,20 L20,380 L380,380 L380,20 L20,20 Z',
     textShadow: '0px 5px 15px rgba(255,255,255,0.5)'
-  })
+  });
 
   const NavBarAnimationItems = useSpring({
     fontSize: toggle ? "30px": "15px"
-  })
+  });
 
   const InitialNavBar = useSpring({
     to: { opacity: 1 },
     config: { duration: 3000 },
     delay : { duration: 2000 }
   });
+
   const number = useSpring({ number: 1000, from: { number: 0 } });
   
   return (

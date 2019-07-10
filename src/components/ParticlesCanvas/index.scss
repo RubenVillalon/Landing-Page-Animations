@@ -1,13 +1,15 @@
+@import '../Constants.scss';
+
 .particles-main-container {
   display: flex;
-  height: 100vh;
+  height: 200vh;
   justify-content: center;
   align-items: center;
   position: relative;
 
   canvas {
     background: none;
-    height: 100vh;
+    height: 300%;
     position: absolute;
     z-index: 1;
     top: 0px;
