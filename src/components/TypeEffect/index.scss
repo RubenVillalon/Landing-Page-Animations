@@ -5,12 +5,12 @@
   height: 70px;
   margin: 0 auto;
   border-right: 5px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
+  font-size: 175%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);
-  color: white;
+  transform: translateY(-45%);
+  color: #f1f1f1;
 }
 
 /* Animation */
@@ -19,18 +19,10 @@
     blinkTextCursor 800ms steps(40) infinite normal;
 }
 @keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 17em;
-  }
+  from {width: 0;}
+  to {width: 17em;}
 }
 @keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(235, 147, 15, 0.829);
-  }
-  to {
-    border-right-color: transparent;
-  }
+  from {border-right-color: rgba(235, 147, 15, 0.829);}
+  to {border-right-color: transparent;}
 }

@@ -2,14 +2,13 @@
 
 .particles-main-container {
   display: flex;
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-direction: column;
 
   canvas {
-    background: none;
-    height: 300%;
     position: absolute;
     z-index: 1;
     top: 0px;
@@ -19,7 +18,71 @@
   h1 {
     position: absolute;
     z-index: 2;
-    top: auto;
-    left: auto;
   }
+}
+
+.internal-container-top {
+  border: solid yellow;
+  width: 100%;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.internal-container-bottom {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .main-title {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  .second-title {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 25px;
+
+  }
+  .sub-title {
+    color: white;
+    margin-bottom: 30px;
+
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    .learn-more-button {
+      font-family: Roboto, serif;
+      border: solid red 1.5px;
+      border-radius: 5px;
+      background: none;
+      font-size: 17px;
+      color: #ff2906;
+      height: 40px;
+      width: 150px;
+    }
+
+    .demo-button {
+      font-family: Roboto, serif;
+      border: solid red 1.5px;
+      border-radius: 20px;
+      background: none;
+      font-size: 17px;
+      background: #ff2906;
+      color: white;
+      height: 40px;
+      width: 150px;
+    }
+  }
+
+
+
 }

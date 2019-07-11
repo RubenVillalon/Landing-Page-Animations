@@ -21,10 +21,6 @@ const ParticlesCanvas = () => {
                 },
                 "shape": {
                     "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
                     "polygon": {
                         "nb_sides": 3
                     },
@@ -118,20 +114,42 @@ const ParticlesCanvas = () => {
             "retina_detect": true
         };
 
-
         const CanvasAnimation = useSpring({
+            from: {opacity: 0},
             to: {opacity: 1, background: "#19154A"},
-            config: {duration: 10000}
-
+            config: {duration: 2000}
+        });
+        const h1Animation = useSpring({
+            from: {marginBottom: 400},
+            delay: '9000',
+            config: {duration: 3000}
+        });
+        const buttonAnimation = useSpring({
+            from: {opacity: 0},
+            to: {opacity: 1},
+            delay: '1000',
+            config: {duration: 2000}
         });
 
         return (
             <animated.div className='particles-main-container' style={CanvasAnimation}>
-                <h1>
-                    <TypeEffect text={"We Create Efficient Chemistry, Together"}/>
-                </h1>
-                <Particles params={particlesConfig}>
-                </Particles>
+                <Particles params={particlesConfig}/>
+                <div className='internal-container-top'>
+                    <animated.h1 style={h1Animation}>
+                        <TypeEffect text={"We Create Chemistry, Together"}/>
+                    </animated.h1>
+                </div>
+                <div className='internal-container-bottom'>
+                    <div>
+                        <p className="main-title">Design your molecules</p>
+                        <p className="second-title">using 2D and 3D</p>
+                        <p className="sub-title" >Start your own project and enhance your workflow</p>
+                    </div>
+                    <div className='buttons-container'>
+                        <animated.button className='demo-button' style={buttonAnimation}>Demo</animated.button>
+                        <animated.button className='learn-more-button' style={buttonAnimation}>Learn More</animated.button>
+                    </div>
+                </div>
             </animated.div>
         );
     }
