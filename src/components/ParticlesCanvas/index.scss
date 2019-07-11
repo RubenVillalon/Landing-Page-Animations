@@ -2,7 +2,7 @@
 
 .particles-main-container {
   display: flex;
-  height: 90vh;
+  height: 96vh;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -22,15 +22,14 @@
 }
 
 .internal-container-top {
-  border: solid yellow;
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.internal-container-bottom {
+.main-message-container {
   width: 500px;
   display: flex;
   justify-content: center;
@@ -39,16 +38,18 @@
 
   .main-title {
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 65px;
   }
+
   .second-title {
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 25px;
 
   }
+
   .sub-title {
     color: white;
     margin-bottom: 30px;
@@ -59,6 +60,19 @@
     display: flex;
     justify-content: space-around;
     width: 80%;
+
+    .demo-button {
+      font-family: Roboto, serif;
+      border: solid red 1.5px;
+      border-radius: 30px;
+      background: none;
+      font-size: 17px;
+      background: #c52306;
+      color: white;
+      height: 50px;
+      width: 170px;
+    }
+
     .learn-more-button {
       font-family: Roboto, serif;
       border: solid red 1.5px;
@@ -66,23 +80,44 @@
       background: none;
       font-size: 17px;
       color: #ff2906;
-      height: 40px;
-      width: 150px;
-    }
-
-    .demo-button {
-      font-family: Roboto, serif;
-      border: solid red 1.5px;
-      border-radius: 20px;
-      background: none;
-      font-size: 17px;
-      background: #ff2906;
-      color: white;
-      height: 40px;
-      width: 150px;
+      height: 50px;
+      width: 170px;
     }
   }
 
+}
 
+.secondary-message {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+
+  .left {
+    display: flex;
+
+    .left-description {
+      font-size: 25px;
+      line-height: 40px;
+      width: 350px;
+      background: -webkit-linear-gradient(left, rgba(5, 156, 255, 0.45), #c7e1ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .right {
+    display: flex;
+
+
+    .right-description {
+      font-size: 15px;
+      width: 350px;
+      color: white;
+
+    }
+  }
 
 }
+

@@ -134,21 +134,33 @@ const ParticlesCanvas = () => {
         return (
             <animated.div className='particles-main-container' style={CanvasAnimation}>
                 <Particles params={particlesConfig}/>
-                <div className='internal-container-top'>
-                    <animated.h1 style={h1Animation}>
-                        <TypeEffect text={"We Create Chemistry, Together"}/>
-                    </animated.h1>
-                </div>
-                <div className='internal-container-bottom'>
+                {/*<div className='internal-container-top'>*/}
+                {/*    <animated.h1 style={h1Animation}>*/}
+                {/*        <TypeEffect text={"We Create Chemistry, Together"}/>*/}
+                {/*    </animated.h1>*/}
+                {/*</div>*/}
+                <div className='main-message-container'>
                     <div>
                         <p className="main-title">Design your molecules</p>
                         <p className="second-title">using 2D and 3D</p>
-                        <p className="sub-title" >Start your own project and enhance your workflow</p>
+                        <p className="sub-title">Start your own project and enhance your workflow</p>
                     </div>
                     <div className='buttons-container'>
                         <animated.button className='demo-button' style={buttonAnimation}>Demo</animated.button>
                         <animated.button className='learn-more-button' style={buttonAnimation}>Learn More</animated.button>
                     </div>
+
+                </div>
+
+                <div className='secondary-message'>
+                    <div className="left">
+                        <p className="left-description">a more efficient way to get access and build your moleculeslibrary </p>
+                    </div>
+                    <div className='second-message right'>
+                        <p className="right-description">At ChemAlive, our goal is to allow the full and automatic calculation of accurate and reliable data for molecular properties and synthetic reactions available to all chemists from basic 2D chemical syntax.</p>
+
+                    </div>
+
                 </div>
             </animated.div>
         );

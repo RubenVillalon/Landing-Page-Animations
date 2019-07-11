@@ -1,10 +1,12 @@
 .navigation-container {
   height: 80px;
   width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
   color: rgba(255, 255, 255, 0.86);
   display: flex;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 15px;
   align-items: center;
   background: none;
   cursor: pointer;
@@ -12,10 +14,8 @@
   position: fixed;
 
   .left {
-    margin-left: 10%;
-
     .logo {
-      height: 35px;
+      height: 40px;
       opacity: 0.9;
     }
   }
@@ -36,9 +36,8 @@
       background: none;
       font-size: 17px;
       color: #ff2906;
-      height: 40px;
-      width: 150px;
-      margin-right: 10%;
+      height: 35px;
+      width: 165px;
     }
 
   }
