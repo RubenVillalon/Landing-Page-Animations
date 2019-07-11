@@ -2,31 +2,29 @@
 
 .particles-main-container {
   display: flex;
-  height: 96vh;
+  height: 95vh;
   justify-content: center;
   align-items: center;
   position: relative;
   flex-direction: column;
-
   canvas {
     position: absolute;
     z-index: 1;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
-
   h1 {
-    position: absolute;
     z-index: 2;
   }
 }
 
 .internal-container-top {
   width: 100%;
-  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 250px;
+  position: absolute;
 }
 
 .main-message-container {
@@ -37,19 +35,16 @@
   align-items: center;
 
   .main-title {
-    color: white;
-    font-size: 60px;
+    color: var(--color-primary);
+    font-size: 63px;
     font-weight: bold;
     line-height: 65px;
   }
-
   .second-title {
     color: white;
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 25px;
-
   }
-
   .sub-title {
     color: white;
     margin-bottom: 30px;
@@ -96,12 +91,11 @@
 
   .left {
     display: flex;
-
     .left-description {
       font-size: 25px;
       line-height: 40px;
       width: 350px;
-      background: -webkit-linear-gradient(left, rgba(5, 156, 255, 0.45), #c7e1ff);
+      background: -webkit-linear-gradient(right, rgba(5, 156, 255, 0.45), #c7e1ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -109,13 +103,10 @@
 
   .right {
     display: flex;
-
-
     .right-description {
       font-size: 15px;
       width: 350px;
       color: white;
-
     }
   }
 

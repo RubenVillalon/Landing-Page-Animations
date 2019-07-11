@@ -12,9 +12,8 @@ const Footer = () => {
                 Research
             </div>
             <div>
-                ©Propulsion Academy. All rights reserved
+                © Propulsion Academy. All Rights Reserved.
             </div>
-
             <div className='right'>
                 <p>Connect</p>
                 <img className='icon' src={facebook} alt='facebook'/>
@@ -22,7 +21,6 @@ const Footer = () => {
                 <img className='icon' src={linkedIn} alt='linkedIn'/>
                 <img className='icon' src={instagram} alt='instagram'/>
             </div>
-
         </div>
     );
 };

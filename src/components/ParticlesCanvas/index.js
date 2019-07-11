@@ -117,50 +117,54 @@ const ParticlesCanvas = () => {
         const CanvasAnimation = useSpring({
             from: {opacity: 0},
             to: {opacity: 1, background: "#19154A"},
-            config: {duration: 2000}
+            config: {duration: 1500}
         });
         const h1Animation = useSpring({
-            from: {marginBottom: 400},
-            delay: '9000',
-            config: {duration: 3000}
+            from: {marginBottom: 400, opacity: 1},
+            to: {marginBottom: 100, opacity: 0},
+            delay: '7500',
+            config: {duration: 1000}
         });
         const buttonAnimation = useSpring({
-            from: {opacity: 0},
-            to: {opacity: 1},
-            delay: '1000',
-            config: {duration: 2000}
-        });
+        from: {opacity: 0},
+        to: {opacity: 1},
+        delay: '9500',
+        config: {duration: 2000}
+    });
+
+    const TextAnimation = useSpring({
+        from: {opacity: 0},
+        to: {opacity: 1},
+        delay: '8500',
+        config: {duration: 2000}
+    });
 
         return (
             <animated.div className='particles-main-container' style={CanvasAnimation}>
                 <Particles params={particlesConfig}/>
-                {/*<div className='internal-container-top'>*/}
-                {/*    <animated.h1 style={h1Animation}>*/}
-                {/*        <TypeEffect text={"We Create Chemistry, Together"}/>*/}
-                {/*    </animated.h1>*/}
-                {/*</div>*/}
+                <div className='internal-container-top'>
+                    <animated.h1 style={h1Animation}>
+                        <TypeEffect text={"We Create Chemistry, Together"}/>
+                    </animated.h1>
+                </div>
                 <div className='main-message-container'>
                     <div>
-                        <p className="main-title">Design your molecules</p>
-                        <p className="second-title">using 2D and 3D</p>
-                        <p className="sub-title">Start your own project and enhance your workflow</p>
+                        <animated.p style={TextAnimation} className="main-title">Design your molecules</animated.p>
+                        <animated.p style={TextAnimation} className="second-title">using 2D and 3D</animated.p>
+                        <animated.p style={TextAnimation} className="sub-title">Start your own project and enhance your workflow</animated.p>
                     </div>
                     <div className='buttons-container'>
                         <animated.button className='demo-button' style={buttonAnimation}>Demo</animated.button>
                         <animated.button className='learn-more-button' style={buttonAnimation}>Learn More</animated.button>
                     </div>
-
                 </div>
-
                 <div className='secondary-message'>
                     <div className="left">
-                        <p className="left-description">a more efficient way to get access and build your moleculeslibrary </p>
+                        <animated.p style={TextAnimation} className="left-description">a more efficient way to get access and build your moleculeslibrary </animated.p>
                     </div>
                     <div className='second-message right'>
-                        <p className="right-description">At ChemAlive, our goal is to allow the full and automatic calculation of accurate and reliable data for molecular properties and synthetic reactions available to all chemists from basic 2D chemical syntax.</p>
-
+                        <animated.p style={TextAnimation} className="right-description">At ChemAlive, our goal is to allow the full and automatic calculation of accurate and reliable data for molecular properties and synthetic reactions available to all chemists from basic 2D chemical syntax.</animated.p>
                     </div>
-
                 </div>
             </animated.div>
         );

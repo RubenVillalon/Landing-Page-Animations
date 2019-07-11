@@ -1,10 +1,10 @@
-$background-footer: '#f8f8f8';
-$color-font-navigation: "white";
+:root {
+  --color-background-footer: rgb(15, 14, 58);
 
+  --color-primary: white;
+}
 
-//:root {
-//  --color-bg-footer: #{$bg-footer};
-//  --color-particles: #{$color-particles};
+// background: linear-gradient(to top, rgb(15, 14, 58), rgb(15, 14, 58));
 //  --color-rating-star-active: #{$color-rating-star-active};
 //  --color-rating-star-bg: #{$color-rating-star-bg};
 //  --color-footer-nav: #{$color-footer-nav};
