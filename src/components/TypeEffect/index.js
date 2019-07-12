@@ -4,9 +4,7 @@ import "./index.scss";
 const TypeEffect = props => {
   return (
     <div>
-      <p class="line-1 anim-typewriter">
-        {props.text}
-      </p>
+      <p class="line-1 anim-typewriter">{props.text}</p>
     </div>
   );
 };
