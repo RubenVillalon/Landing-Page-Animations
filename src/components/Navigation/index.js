@@ -22,7 +22,7 @@ const Navigation = props => {
                 <p onClick={() => props.history.push("/company")} className='navigation-items'>Company</p>
                 <p className='navigation-items'>Features</p>
                 <p className='navigation-items'>Contact</p>
-                <button className='register-button'>Register</button>
+                <button onClick={() => props.history.push("/registration")} className='register-button'>Register</button>
             </div>
         </div>
     );
