@@ -5,7 +5,7 @@ import "./index.scss";
 import ParticlesCanvas from "../ParticlesCanvas";
 import Footer from "../Footer";
 
-const App = () => {
+const Home = () => {
   return (
     <div className='app-main-container'>
       <Navigation />
@@ -15,4 +15,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
