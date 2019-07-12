@@ -1,14 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import "./index.scss";
-import {useSpring, animated} from "react-spring";
+import {useSpring } from "react-spring";
 import logo from './assets/logo.png'
 
 const Navigation = () => {
-    const [toggle, setToggle] = useState(false);
-
-    const NavBarAnimationItems = useSpring({
-        fontSize: toggle ? "30px" : "15px"
-    });
 
     const InitialNavBar = useSpring({
         to: {opacity: 1},

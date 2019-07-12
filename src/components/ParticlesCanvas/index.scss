@@ -57,7 +57,6 @@
     width: 80%;
 
     .demo-button {
-      font-family: Roboto, serif;
       border: solid red 1.5px;
       border-radius: 30px;
       background: none;
@@ -69,7 +68,6 @@
     }
 
     .learn-more-button {
-      font-family: Roboto, serif;
       border: solid red 1.5px;
       border-radius: 5px;
       background: none;
@@ -92,7 +90,8 @@
   .left {
     display: flex;
     .left-description {
-      font-size: 25px;
+      font-size: 27px;
+      weight: bold;
       line-height: 40px;
       width: 350px;
       background: -webkit-linear-gradient(right, rgba(5, 156, 255, 0.45), #c7e1ff);
@@ -104,7 +103,7 @@
   .right {
     display: flex;
     .right-description {
-      font-size: 15px;
+      font-size: 16px;
       width: 350px;
       color: white;
     }
