@@ -2,8 +2,10 @@ import React from "react";
 import "./index.scss";
 import {useSpring } from "react-spring";
 import logo from './assets/logo.png'
+import {withRouter} from "react-router";
+import {connect} from "react-redux";
 
-const Navigation = () => {
+const Navigation = props => {
 
     const InitialNavBar = useSpring({
         to: {opacity: 1},
@@ -17,7 +19,7 @@ const Navigation = () => {
                 <img className='logo' src={logo} alt='logo'/>
             </div>
             <div className='right'>
-                <p  className='navigation-items'>Company</p>
+                <p onClick={() => props.history.push("/company")} className='navigation-items'>Company</p>
                 <p className='navigation-items'>Features</p>
                 <p className='navigation-items'>Contact</p>
                 <button className='register-button'>Register</button>
@@ -26,4 +28,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default withRouter(connect()(Navigation));
