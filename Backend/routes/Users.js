@@ -1,8 +1,6 @@
 const express = require("express");
-const app = express();
+const router = express.Router();
 const Joi = require("@hapi/joi");
-
-app.use(express.json());
 
 const users = [
   { id: 1, name: "User 1" },
@@ -10,33 +8,25 @@ const users = [
   { id: 3, name: "USer 3" }
 ];
 
-app.get("/", (req, res) => {
-  res.send("this is home component");
-});
-
-app.get("/login", (req, res) => {
-  res.send([1, 2, 3]);
-});
-
-// get all users
-app.get("/api/users", (req, res) => {
+// Get all users
+router.get("/", (req, res) => {
   res.send(users);
 });
 
-// get a specific user
-app.get("/api/users/:id", (req, res) => {
+// Get a specific user
+router.get("/:id", (req, res) => {
   const UserRequested = users.find(user => user.id === parseInt(req.params.id));
   if (!UserRequested) return res.status(404).send("The user does not exist");
   res.send(UserRequested);
 });
 
-// create a new user
-app.post("/api/users", (req, res) => {
+// Create a new user
+router.post("/", (req, res) => {
   const { error } = validateUser(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
   const user = {
-    id: Math.floor(Math.random()*100),
+    id: Math.floor(Math.random() * 100),
     name: req.body.name
   };
 
@@ -44,8 +34,8 @@ app.post("/api/users", (req, res) => {
   res.send(`your just create the new user: ${user.name} with id: ${user.id}`);
 });
 
-//update a user
-app.put("/api/users/:id", (req, res) => {
+// Update a user
+router.put("/:id", (req, res) => {
   const user = users.find(user => user.id === parseInt(req.params.id));
   if (!user) return res.status(404).send("The user does not exist");
 
@@ -56,7 +46,8 @@ app.put("/api/users/:id", (req, res) => {
   res.send(user);
 });
 
-app.delete("/api/users/:id", (req, res) => {
+// Delete user
+router.delete("/:id", (req, res) => {
   const user = users.find(user => user.id === parseInt(req.params.id));
   if (!user) return res.status(404).send("The user does not exist");
 
@@ -66,29 +57,15 @@ app.delete("/api/users/:id", (req, res) => {
   res.status(200).send(`you just deleted the user ${user.id}`);
 });
 
-//getting both integers in the URL into an object with the name properties given in the url path
-app.get("/api/users/:id/:age", (req, res) => {
-  res.send(req.params);
-});
+// ~~~~~~~~~~~~~~~~~~~~~~~ VALIDATION FUNCTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 
-app.get("/api/projects/:id/:age", (req, res) => {
-  res.send(req.query);
-  // { sortBy": "name" } in browser
-});
-
-// ~~~~~~~~~~~~~~~~~~~~~~~ FUNCTIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 function validateUser(user) {
   const schema = {
     name: Joi.string()
       .min(3)
       .required()
   };
-
   return Joi.validate(user, schema);
 }
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PORTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
-const Port = process.env.Port || 4000;
-// if I want to set a Port Environment Variable:
-// $ export PORT=5000 or any port number.
-app.listen(Port, () => console.log(`Listening on port ${Port}...`));
+module.exports = router;
