@@ -1,7 +1,15 @@
+@font-face {
+  font-family: 'blacker';
+  src: url('../src/fonts/Blacker-Display-Medium-trial.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 *,
 html,
 body {
   margin: 0;
-  font-family: "Helvetica", serif;
+  font-family: "blacker", serif;
   box-sizing: border-box;
 }

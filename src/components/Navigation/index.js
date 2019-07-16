@@ -5,6 +5,7 @@ import logo from "./assets/logo.png";
 import { withRouter } from "react-router";
 import { connect } from "react-redux";
 
+
 const Navigation = props => {
   const InitialNavBar = useSpring({
     to: { opacity: 1 },
