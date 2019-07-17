@@ -1,7 +1,7 @@
 // adding fonts from locally files.
 @font-face {
   font-family: 'blacker';
-  src: url('../src/fonts/Blacker-Display-Medium-trial.ttf') format('truetype');
+  src: url('./Assets/fonts/Blacker-Display-Medium-trial.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,6 +10,6 @@
 html,
 body {
   margin: 0;
-  font-family: "blacker", serif;
+  font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
