@@ -25,7 +25,8 @@ const Navigation = props => {
         >
           Company
         </p>
-        <p className="navigation-items"><a href='#second-section'>Second Section</a></p>
+        <a className="navigation-items" href='#second-section'>Second Section</a>
+        <p className="navigation-items">Features</p>
         <p className="navigation-items">Contact</p>
         <button
           onClick={() => props.history.push("/registration")}

@@ -6,6 +6,7 @@ import "../Constants.scss";
 import TypeEffect from "../TypeEffect";
 
 import SecondSection from "../SecondSection";
+import ThirdSection from "../ThirdSection";
 import particlesConfig from '../ParticlesConf'
 
 const LandingPage = () => {
@@ -83,6 +84,7 @@ const LandingPage = () => {
         </div>
       </div>
       <SecondSection/>
+      <ThirdSection/>
     </animated.div>
   );
 };
