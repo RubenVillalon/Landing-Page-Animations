@@ -16,7 +16,7 @@ const Navigation = props => {
   return (
     <div style={InitialNavBar} className="navigation-container">
       <div className="left">
-        <img className="logo" src={logo} alt="logo" />
+        <a href='#home'><img className="logo" src={logo} alt="logo"></img></a>
       </div>
       <div className="right">
         <p
@@ -26,6 +26,7 @@ const Navigation = props => {
           Company
         </p>
         <a className="navigation-items" href='#second-section'>Second Section</a>
+        <a className="navigation-items" href='#third-section'>Third Section</a>
         <p className="navigation-items">Features</p>
         <p className="navigation-items">Contact</p>
         <button

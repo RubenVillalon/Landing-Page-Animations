@@ -1,7 +1,35 @@
 #second-section {
-    background: rgba(255, 166, 0, 0.514);
-    width: 100vw;
-    height: 70vh;
-    position: relative;
-  
+  background: rgb(255, 255, 255);
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.second-section-item {
+  font-weight: bold;
+  font-size: 25px;
+  width: 300px;
+  height: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: red solid;
+
+  .image {
+    height: 200px;
+    width: 200px;
+    border: solid white;
   }
+
+  .description {
+ 
+  }
+
+  .button {
+    font-size: 12px;
+  }
+}
