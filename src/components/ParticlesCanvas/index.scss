@@ -3,8 +3,8 @@
 @media (min-width: 1281px) {
   .particles-main-container {
     display: flex;
-    height: 93vh;
-    justify-content: center;
+    height: 300vh;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
     flex-direction: column;
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 250px;
+    margin-top: 30%;
     position: absolute;
   }
 
@@ -34,6 +34,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 16%;
 
     .main-title {
       color: var(--color-primary);

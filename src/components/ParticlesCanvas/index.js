@@ -9,7 +9,7 @@ const ParticlesCanvas = () => {
   const particlesConfig = {
     particles: {
       number: {
-        value: 400,
+        value: 200,
         density: {
           enable: false,
           value_area: 1202.559045649142
@@ -51,7 +51,7 @@ const ParticlesCanvas = () => {
       },
       line_linked: {
         enable: true,
-        distance: 45,
+        distance: 80,
         color: "#ffffff",
         opacity: 0.1122388442605866,
         width: 0.9620472365193136
