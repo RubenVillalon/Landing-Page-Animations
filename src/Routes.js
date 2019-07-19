@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Company from "./components/Company";
 import Registration from "./components/Registration";
 import Login from "./components/Login";
-import LandingPage from "./LandingPage/LandingPage";
+import LandingPage from "./components/LandingPage";
 
 const Routes = () => {
   return (

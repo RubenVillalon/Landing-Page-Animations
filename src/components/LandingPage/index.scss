@@ -3,7 +3,7 @@
 @media (min-width: 1281px) {
   .particles-main-container {
     display: flex;
-    height: 300vh;
+    height: 380vh;
     justify-content: flex-start;
     align-items: center;
     position: relative;
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30%;
+    margin-top: 28%;
     position: absolute;
   }
 
@@ -34,7 +34,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 16%;
+    margin-top: 14%;
 
     .main-title {
       color: var(--color-primary);
@@ -86,12 +86,15 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10%;
+    border: solid white;
+    margin-bottom: 130px;
 
     .left {
       display: flex;
+
       .left-description {
         font-size: 27px;
-        weight: bold;
+        font-weight: bold;
         line-height: 40px;
         width: 350px;
         background: -webkit-linear-gradient(
@@ -205,7 +208,7 @@
       display: flex;
       .left-description {
         font-size: 27px;
-        weight: bold;
+        font-weight: bold;
         line-height: 40px;
         width: 350px;
         background: -webkit-linear-gradient(
@@ -228,3 +231,6 @@
     }
   }
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~ Second Section ~~~~~~~~~~~~~~~~~~~~~~~ //
+
