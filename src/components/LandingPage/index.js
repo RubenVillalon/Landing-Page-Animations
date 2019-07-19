@@ -2,8 +2,9 @@ import React from "react";
 import Particles from "react-particles-js";
 import { useSpring, animated } from "react-spring";
 import "./index.scss";
-import TypeEffect from "../TypeEffect";
 import "../Constants.scss";
+import TypeEffect from "../TypeEffect";
+
 import SecondSection from "../SecondSection";
 import particlesConfig from '../ParticlesConf'
 
