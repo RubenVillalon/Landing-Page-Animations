@@ -5,3 +5,21 @@
     position: relative;
   
   }
+
+.third-section-container {
+  border: black solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.219);
+
+  .title {
+    border: blue solid;
+  }
+
+  .support-grid-container {
+    border: orange solid;
+    height: 300px;
+    width: 300px;
+  }
+}
