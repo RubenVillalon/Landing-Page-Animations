@@ -1,5 +1,5 @@
 #third-section {
-    background: rgba(218, 25, 25, 0.13);
+  background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.219);
+  color: white;
 
   .title {
     border: blue solid;

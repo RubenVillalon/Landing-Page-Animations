@@ -53,19 +53,3 @@
   }
 }
 
-@keyframes pulse {
-  0% {
-    opacity: 0;
-    right: 5px;
-  }
-  100% {
-    opacity: 1;
-    right: -5px;
-  }
-}
-
-i.fa {
-  position: relative;
-  right: -2px;
-  animation: 1000ms pulse infinite;
-}

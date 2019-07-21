@@ -8,33 +8,30 @@ const SecondSection = () => {
   return (
     <div id="second-section">
       <div className="second-section-item">
-        <img src={smartphone} className="image" />
+        <img src={smartphone} className="image" alt='features' />
         <p className="description">
           This is one of the best features of the product, with a few lines we
           can say a log, but after 
         </p>
-        <a className="button">Learn More</a>
+        <p className="button">Learn More</p>
       </div>
       <div className="second-section-item">
-        <img src={laptop} className="image" />
+        <img src={laptop} className="image" alt='features'/>
         <p className="description">
           This is one of the best features of the product, with a few lines we
           can say a log, but after this there is a small clickable button with
           learn more
         </p>
-        <a className="button">Learn More</a>
+        <p className="button">Learn More</p>
       </div>
       <div className="second-section-item">
-        <img src={analytics} className="image" />
+        <img src={analytics} className="image" alt='features'/>
         <p className="description">
           This is one of the best features of the product, with a few lines we
           can say a log, but after this there is a small clickable button with
           learn more, lets take a look
         </p>
-        <a className="button">Learn More</a>
-
-        
-       
+        <p className="button">Learn More</p>      
       </div>
     </div>
   );
