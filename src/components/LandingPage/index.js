@@ -38,7 +38,7 @@ const LandingPage = () => {
 
   return (
     <animated.div className="particles-main-container" style={CanvasAnimation}>
-      <p id='home' style={{ position: "absolute"}}></p>
+      <p id='main-section' style={{ position: "absolute"}}></p>
       <Particles params={particlesConfig} />
       <div className="internal-container-top">
         <animated.h1 style={h1Animation}>

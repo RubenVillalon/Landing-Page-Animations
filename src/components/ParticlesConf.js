@@ -32,11 +32,11 @@ const particlesConfig = {
         }
       },
       size: {
-        value: 10,
+        value: 12,
         random: true,
         anim: {
           enable: true,
-          speed: 14.617389821424226,
+          speed: 16.617389821424226,
           size_min: 0.1,
           sync: false
         }
@@ -45,8 +45,8 @@ const particlesConfig = {
         enable: true,
         distance: 80,
         color: "#ffffff",
-        opacity: 0.1122388442605866,
-        width: 0.9620472365193136
+        opacity: 0.3122388442605866,
+        width: 0.9920472365193136
       },
       move: {
         enable: true,

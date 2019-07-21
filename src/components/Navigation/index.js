@@ -16,7 +16,7 @@ const Navigation = props => {
   return (
     <div style={InitialNavBar} className="navigation-container">
       <div className="left">
-        <a href='#home'><img className="logo" src={logo} alt="logo"></img></a>
+        <a href='#main-section'><img className="logo" src={logo} alt="logo"></img></a>
       </div>
       <div className="right">
         <p
