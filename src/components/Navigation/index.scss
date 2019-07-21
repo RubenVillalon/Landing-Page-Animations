@@ -1,21 +1,12 @@
-// @font-face {
-//   font-family: 'barbaro';
-//   src: url('../../Assets/fonts/barbaro.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-
-
 .navigation-container {
   height: 70px;
   width: 100%;
   padding-left: 10%;
   padding-right: 10%;
-  color: rgba(255, 255, 255, 0.86);
+  color: rgba(255, 255, 255, 0.733);
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 14.5px;
   align-items: center;
   background: none;
   cursor: pointer;
@@ -34,11 +25,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 
     .navigation-items {
-      margin: 0 50px 0 0;
-      color: white;
-      outline: none;
+      margin: 0 40px 0 0;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.733);
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.178);
+        transition: 0.3s;
+      }
 
     }
 

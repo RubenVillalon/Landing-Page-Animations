@@ -9,7 +9,7 @@ import "./index.scss";
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Routes />
+      <Routes/>
     </BrowserRouter>
   </Provider>,
 
