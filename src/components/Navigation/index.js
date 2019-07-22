@@ -36,6 +36,7 @@ const Navigation = props => {
           Register
         </button>
       </div>
+     
     </div>
   );
 };

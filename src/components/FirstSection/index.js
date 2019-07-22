@@ -1,11 +1,13 @@
 import React from "react";
 import { animated, useSpring } from "react-spring";
 import TypeEffect from "../TypeEffect";
-import './index.scss'
+import "./index.scss";
+import Android from './assets/Android.png'
+import Chrome from './assets/Chrome.png'
+import Desktop from './assets/Desktop.png'
 
 const FirstSection = () => {
-
-     const mainTitleAnimation = useSpring({
+  const mainTitleAnimation = useSpring({
     from: { opacity: 1 },
     to: { opacity: 0 },
     delay: "7500",
@@ -63,14 +65,32 @@ const FirstSection = () => {
         </div>
         <div className="second-message right">
           <animated.p style={messagesAnimation} className="right-description">
-            At ChemAlive, our goal is to allow the full and automatic
-            calculation of accurate and reliable data for molecular properties
-            and synthetic reactions available to all chemists from basic 2D
-            chemical syntax.
+            ConstruQt is our core molecular design tool that underpins all other
+            automation and machine learning technologies that ChemAlive is
+            developing. It is currently available as an API and allows for quick
+            deployment of quantum chemical calculations to enhance your
+            chemistry
           </animated.p>
         </div>
       </div>
-      <div className="main-section-bottom">new section</div>
+      <div className="main-section-bottom">
+        <p>available Cross-platform</p>
+        <img src={Android}></img>
+        <img src={Chrome}></img>
+        <img src={Desktop}></img>
+        <img src={Android}></img>
+        <img src={Chrome}></img>
+        <img src={Desktop}></img>
+        </div>
+        <div className="secondary-section-bottom">
+        <p>available Cross-platform</p>
+        <img src={Android}></img>
+        <img src={Chrome}></img>
+        <img src={Desktop}></img>
+        <img src={Android}></img>
+        <img src={Chrome}></img>
+        <img src={Desktop}></img>
+        </div>
     </div>
   );
 };

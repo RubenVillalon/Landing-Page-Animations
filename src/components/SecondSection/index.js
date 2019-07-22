@@ -33,6 +33,15 @@ const SecondSection = () => {
         </p>
         <p className="button">Learn More</p>      
       </div>
+      <div className="second-section-item">
+        <img src={analytics} className="image" alt='features'/>
+        <p className="description">
+          This is one of the best features of the product, with a few lines we
+          can say a log, but after this there is a small clickable button with
+          learn more, lets take a look
+        </p>
+        <p className="button">Learn More</p>      
+      </div>
     </div>
   );
 };

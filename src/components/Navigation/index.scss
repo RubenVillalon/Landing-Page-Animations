@@ -1,9 +1,9 @@
 .navigation-container {
-  height: 70px;
+  height: 75px;
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
-  color: rgba(255, 255, 255, 0.733);
+  padding-left: 8%;
+  padding-right: 8%;
+  color: rgba(255, 255, 255, 0.533);
   display: flex;
   justify-content: space-between;
   font-size: 14.5px;
@@ -12,9 +12,14 @@
   cursor: pointer;
   z-index: 3;
   position: fixed;
-  border-bottom: rgba(255, 255, 255, 0.274) solid 0.5px;
+
 
   .left {
+    height: 100%;
+    border-bottom: rgba(255, 255, 255, 0.307) solid 0.5px;
+    display: flex;
+    align-items: center;
+
     .logo {
       height: 40px;
       opacity: 0.9;
@@ -26,6 +31,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    border-bottom: rgba(255, 255, 255, 0.307) solid 0.5px;
 
     .navigation-items {
       margin: 0 40px 0 0;
@@ -36,8 +42,7 @@
       align-items: center;
 
       &:hover {
-        background: rgba(0, 0, 0, 0.178);
-        transition: 0.3s;
+        color: red;
       }
 
     }

@@ -3,11 +3,12 @@
 @media (min-width: 1281px) {
   .particles-main-container {
     display: flex;
-    height: 380vh;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    flex-direction: column;
+    height: 380vh;    
+    width: 100%;
 
     canvas {
       position: absolute;
@@ -19,6 +20,4 @@
       z-index: 2;
     }
   }
- 
 }
-
