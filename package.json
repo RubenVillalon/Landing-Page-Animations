@@ -13,7 +13,7 @@
     "prop-types": "^15.7.2",
     "rc-scroll-anim": "^2.5.9",
     "react": "^16.8.6",
-    "react-dev-utils": "^9.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.8.6",
     "react-google-login": "^5.0.4",
     "react-particles-js": "^2.6.0",
